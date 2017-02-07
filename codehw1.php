@@ -51,13 +51,21 @@
     $bottle = "bottles of beer";
     
     while ($beerinput >= 1){
-        echo "$beerinput $bottle on the wall, $beerinput $bottle,<br>";
-        --$beerinput;
-        if ($beerinput <= 1){
-            echo "you take one down and pass it around $beerinput bottle of beer on the wall!<br>";
+        if ($beerinput == 1){
+            echo "$beerinput bottle on the wall, $beerinput bottle of beer,<br>";
+            --$beerinput;
+            echo "you take one down and pass it around $beerinput bottles of beer on the wall!<br>";
+            --$beerinput;
         }
         else{
+            echo "$beerinput $bottle on the wall, $beerinput $bottle,<br>";
+            --$beerinput;
+            if ($beerinput == 1){
+                echo "you take one down and pass it around $beerinput bottle of beer on the wall!<br>";
+            }
+            else{
             echo "you take one down and pass it around $beerinput $bottle on the wall!<br>";
+            }
         }
     }
 
