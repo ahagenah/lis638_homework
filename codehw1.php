@@ -46,7 +46,7 @@
     
     echo "<h1>Challenge 2: 99 Bottles of Beer</h1>";
     
-    $beerinput = 25;
+    $beerinput = 99;
     
     $bottle = "bottles of beer";
     
