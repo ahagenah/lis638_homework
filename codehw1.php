@@ -47,6 +47,7 @@
     echo "<h1>Challenge 2: 99 Bottles of Beer</h1>";
     
     $beerinput = 99;
+    $originalbeerinput = $beerinput;
     
     $bottle = "bottles of beer";
     
@@ -55,7 +56,10 @@
             echo "$beerinput bottle on the wall, $beerinput bottle of beer,<br>";
             --$beerinput;
             echo "you take one down and pass it around $beerinput bottles of beer on the wall!<br>";
-            --$beerinput;
+        }
+        else ($beerinput == 0){
+            echo "No more $bottle on the wall, no more $bottle,<br>";
+            echo "Go to the store, and buy some more, $originalbeerinput $bottle on the wall!";
         }
         else{
             echo "$beerinput $bottle on the wall, $beerinput $bottle,<br>";
@@ -68,7 +72,6 @@
             }
         }
     }
-
 ?>
 </body>
 </html>
